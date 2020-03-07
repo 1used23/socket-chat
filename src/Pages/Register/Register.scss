@@ -1,0 +1,27 @@
+.auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  .block {
+    text-align: center;
+    max-width: 430px;
+  }
+  .text {
+    font-size: 18px;
+  }
+  .title {
+    margin-bottom: 0;
+  }
+  .ant-form-item-explain {
+    text-align: left;
+  }
+  &__reg-link {
+    font-size: 16px;
+    color: #adadad;
+    &-wrap {
+      margin-bottom: 0 !important;
+    }
+  }
+}
