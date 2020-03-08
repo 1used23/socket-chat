@@ -1,0 +1,58 @@
+import React, { useState } from "react";
+import { Input, Button } from "antd";
+import { SendOutlined, AudioOutlined, SmileOutlined } from "@ant-design/icons";
+import { Picker } from "emoji-mart";
+
+import "emoji-mart/css/emoji-mart.css";
+import "./MessageInput.scss";
+
+const MessageInput = () => {
+  const [emojiPicker, setEmojiPicker] = useState(false);
+  const [input, setInput] = useState("");
+
+  return (
+    <div className="dialog__message-input">
+      {emojiPicker && (
+        <Picker
+          set="apple"
+          onSelect={emoji => {
+            setInput(input + emoji.native);
+          }}
+        />
+      )}
+
+      <Input
+        size="large"
+        placeholder="Введите текст сообщения…"
+        onChange={e => {
+          setInput(e.target.value);
+        }}
+        value={input}
+        prefix={
+          <Button
+            shape="circle"
+            icon={<SmileOutlined />}
+            className="input-button"
+            onClick={() => setEmojiPicker(!emojiPicker)}
+          />
+        }
+        suffix={
+          <div className="input__buttons">
+            <Button
+              shape="circle"
+              icon={<AudioOutlined />}
+              className="input-button"
+            />
+            <Button
+              shape="circle"
+              icon={<SendOutlined />}
+              className="input-button"
+            />
+          </div>
+        }
+      ></Input>
+    </div>
+  );
+};
+
+export default MessageInput;

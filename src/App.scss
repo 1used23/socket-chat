@@ -4,3 +4,9 @@ html,
 .wrapper {
   height: 100%;
 }
+
+@media only screen and (min-width: 992px) {
+  .wrapper {
+    padding: 0 150px 0 150px;
+  }
+}
