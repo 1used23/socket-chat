@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/socket-chat/static/css/main.aba998a0.chunk.css",
-    "main.js": "/socket-chat/static/js/main.4f9f56d7.chunk.js",
-    "main.js.map": "/socket-chat/static/js/main.4f9f56d7.chunk.js.map",
+    "main.js": "/socket-chat/static/js/main.d11af824.chunk.js",
+    "main.js.map": "/socket-chat/static/js/main.d11af824.chunk.js.map",
     "runtime-main.js": "/socket-chat/static/js/runtime-main.40857fde.js",
     "runtime-main.js.map": "/socket-chat/static/js/runtime-main.40857fde.js.map",
     "static/css/2.b2df2ba3.chunk.css": "/socket-chat/static/css/2.b2df2ba3.chunk.css",
-    "static/js/2.6ea2e485.chunk.js": "/socket-chat/static/js/2.6ea2e485.chunk.js",
-    "static/js/2.6ea2e485.chunk.js.map": "/socket-chat/static/js/2.6ea2e485.chunk.js.map",
+    "static/js/2.592969bd.chunk.js": "/socket-chat/static/js/2.592969bd.chunk.js",
+    "static/js/2.592969bd.chunk.js.map": "/socket-chat/static/js/2.592969bd.chunk.js.map",
     "index.html": "/socket-chat/index.html",
-    "precache-manifest.6aac35e09accf9621cb875c8946a9a4d.js": "/socket-chat/precache-manifest.6aac35e09accf9621cb875c8946a9a4d.js",
+    "precache-manifest.a33347708752d526fba86f71b8b70941.js": "/socket-chat/precache-manifest.a33347708752d526fba86f71b8b70941.js",
     "service-worker.js": "/socket-chat/service-worker.js",
     "static/css/2.b2df2ba3.chunk.css.map": "/socket-chat/static/css/2.b2df2ba3.chunk.css.map",
     "static/css/main.aba998a0.chunk.css.map": "/socket-chat/static/css/main.aba998a0.chunk.css.map",
-    "static/js/2.6ea2e485.chunk.js.LICENSE.txt": "/socket-chat/static/js/2.6ea2e485.chunk.js.LICENSE.txt"
+    "static/js/2.592969bd.chunk.js.LICENSE.txt": "/socket-chat/static/js/2.592969bd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.40857fde.js",
     "static/css/2.b2df2ba3.chunk.css",
-    "static/js/2.6ea2e485.chunk.js",
+    "static/js/2.592969bd.chunk.js",
     "static/css/main.aba998a0.chunk.css",
-    "static/js/main.4f9f56d7.chunk.js"
+    "static/js/main.d11af824.chunk.js"
   ]
 }
