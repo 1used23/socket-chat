@@ -1,5 +1,5 @@
 import React from "react";
-import { Auth, Register } from "./Pages";
+import { Auth, Register, Home } from "./pages";
 import { Route } from "react-router-dom";
 
 import "antd/dist/antd.css";
@@ -10,6 +10,7 @@ function App() {
     <div className="wrapper">
       <Route exact path={["/", "/login"]} component={Auth} />
       <Route exact path="/register" component={Register} />
+      <Route exact path="/im" component={Home} />
     </div>
   );
 }
