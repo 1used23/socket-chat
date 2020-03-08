@@ -15,6 +15,8 @@ const MessageInput = () => {
       {emojiPicker && (
         <Picker
           set="apple"
+          showSkinTones={false}
+          showPreview={false}
           onSelect={emoji => {
             setInput(input + emoji.native);
           }}
