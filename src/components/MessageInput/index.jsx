@@ -13,8 +13,10 @@ const MessageInput = ({ newMessage, activeDialog, myNick }) => {
   const inputRef = useRef(null);
 
   const sendMessage = () => {
-    newMessage(activeDialog, myNick, input);
-    setInput("");
+    if (input) {
+      newMessage(activeDialog, myNick, input);
+      setInput("");
+    }
   };
 
   useEffect(() => {
