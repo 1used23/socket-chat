@@ -10,7 +10,7 @@ const Home = () => {
   const [dialogsList, setDialogsList] = useState(dialogsListJson);
 
   const newMessage = (dialogIndex, from, message) => {
-    const newDialogsList = dialogsList.slice();
+    const newDialogsList = [...dialogsList];
     newDialogsList[dialogIndex].messages = [
       ...newDialogsList[dialogIndex].messages,
       { from: from, message: message }
