@@ -1,7 +1,8 @@
 .dialogs-list {
   width: 25%;
   min-width: 300px;
-  border-right: 1px solid #F7F7F7;
+  max-width: 300px;
+  border-right: 1px solid #f7f7f7;
   &__search {
     padding: 22px 22px 22px 22px !important;
     width: 284px;

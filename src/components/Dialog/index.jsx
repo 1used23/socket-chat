@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { Message, MessageInput } from "../../components";
 
 import "./Dialog.scss";
@@ -7,14 +7,7 @@ const Dialog = () => {
   const myNick = "nagibator";
   const otherNick = "Васян";
 
-  const messagesRef = useRef(null);
-
-  useEffect(() => {
-    console.log(messagesRef.current);
-    messagesRef.current.scrollTop = messagesRef.current.scrollHeight;
-  });
-
-  const messages = [
+  const [messages, setMessages] = useState([
     {
       message: "Салам, Брут! Чё, как, уничтожил флот галлов? 🖐🏻",
       time: 111,
@@ -67,7 +60,25 @@ const Dialog = () => {
       time: 111,
       sender: otherNick
     }
-  ];
+  ]);
+
+  const newMessage = newMessage => {
+    setMessages([
+      ...messages,
+      {
+        message: newMessage,
+        time: 111,
+        sender: myNick
+      }
+    ]);
+  };
+
+  const messagesRef = useRef(null);
+
+  useEffect(() => {
+    messagesRef.current.scrollTop = messagesRef.current.scrollHeight;
+  });
+
   return (
     <div className="dialog">
       <div className="dialog__name">
@@ -84,7 +95,7 @@ const Dialog = () => {
           })}
       </div>
 
-      <MessageInput />
+      <MessageInput newMessage={newMessage} />
     </div>
   );
 };

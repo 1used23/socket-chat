@@ -4,11 +4,11 @@
   position: relative;
   width: 75%;
   min-width: 400px;
+  max-width: 900px;
   &__messages {
     height: 90%;
     overflow-y: scroll;
     -ms-overflow-style: none;
-    scroll-behavior: smooth;
   }
   &__messages::-webkit-scrollbar {
     width: 0;
