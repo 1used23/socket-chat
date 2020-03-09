@@ -1,10 +1,9 @@
 .dialogs-list {
   width: 25%;
-  min-width: 274px;
-  padding-left: 22px;
-
+  min-width: 300px;
+  border-right: 1px solid #F7F7F7;
   &__search {
-    padding: 22px 22px 0 0 !important;
+    padding: 22px 22px 0 22px !important;
     width: 284px;
   }
   &__title {
@@ -13,7 +12,7 @@
     color: #202020;
     mix-blend-mode: normal;
     opacity: 0.8;
-    padding: 22px 17px 0px 0px;
+    padding: 22px 17px 0px 22px;
     border-bottom: 1px solid #f7f7f7;
     display: flex;
     &-text {
@@ -24,8 +23,12 @@
   }
 }
 .dialog-element {
+  cursor: pointer;
   display: flex;
-  margin-top: 30px;
+  padding: 15px;
+  &:hover {
+    background: #f3f7ff;
+  }
   &__name {
     font-weight: 500;
     font-size: 14px;
