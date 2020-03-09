@@ -7,9 +7,7 @@ const Dialog = ({ activeDialog, dialogsList, newMessage }) => {
   const myNick = "nagibator";
 
   const messagesRef = useRef(null);
-  if (dialogsList) {
-    console.log(dialogsList);
-  }
+
   useEffect(() => {
     if (messagesRef.current) {
       messagesRef.current.scrollTop = messagesRef.current.scrollHeight;

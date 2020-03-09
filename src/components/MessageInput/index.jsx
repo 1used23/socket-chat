@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Input, Button } from "antd";
 import { SendOutlined, AudioOutlined, SmileOutlined } from "@ant-design/icons";
 import { Picker } from "emoji-mart";
@@ -9,6 +9,19 @@ import "./MessageInput.scss";
 const MessageInput = ({ newMessage, activeDialog, myNick }) => {
   const [emojiPicker, setEmojiPicker] = useState(false);
   const [input, setInput] = useState("");
+
+  const inputRef = useRef(null);
+
+  const sendMessage = () => {
+    newMessage(activeDialog, myNick, input);
+    setInput("");
+  };
+
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
+  });
 
   return (
     <div className="dialog__message-input">
@@ -24,12 +37,13 @@ const MessageInput = ({ newMessage, activeDialog, myNick }) => {
       )}
 
       <Input
-        multiple
+        ref={inputRef}
         size="large"
         placeholder="Введите текст сообщения…"
         onChange={e => {
           setInput(e.target.value);
         }}
+        onPressEnter={() => sendMessage()}
         value={input}
         prefix={
           <Button
@@ -50,10 +64,7 @@ const MessageInput = ({ newMessage, activeDialog, myNick }) => {
               shape="circle"
               icon={<SendOutlined />}
               className="input-button"
-              onClick={() => {
-                newMessage(activeDialog, myNick, input);
-                setInput("");
-              }}
+              onClick={() => sendMessage()}
             />
           </div>
         }

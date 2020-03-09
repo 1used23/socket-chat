@@ -25,7 +25,7 @@ const DialogsList = ({ dialogsList, chooseDialog }) => {
                 return (
                   dialog.sender
                     .toLowerCase()
-                    .indexOf(e.target.value.toLowerCase()) >= 0
+                    .indexOf(e.target.value.toLowerCase().trim()) >= 0
                 );
               })
             );
@@ -44,7 +44,6 @@ const DialogsList = ({ dialogsList, chooseDialog }) => {
                 data-id={index}
                 onClick={e => {
                   chooseDialog(e.currentTarget.dataset.id);
-                  console.log(e.currentTarget.dataset.id);
                 }}
               >
                 <div className="dialog-element__avatar">
