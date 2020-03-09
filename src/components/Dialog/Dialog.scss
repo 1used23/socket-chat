@@ -4,6 +4,14 @@
   position: relative;
   width: 75%;
   min-width: 400px;
+  &__messages {
+    height: 90%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+  }
+  &__messages::-webkit-scrollbar {
+    width: 0;
+  }
   &__name {
     font-weight: 500;
     font-size: 17px;

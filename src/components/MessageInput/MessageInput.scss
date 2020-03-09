@@ -3,9 +3,10 @@
 }
 
 .dialog__message-input {
+  width: 100%;
+}
+
+.emoji-mart {
   position: absolute;
-  bottom: 35px;
-  width: 90%;
-  left: 50%;
-  transform: translate(-50%, 0);
+  bottom: 62px;
 }

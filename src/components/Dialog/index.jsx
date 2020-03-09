@@ -37,6 +37,28 @@ const Dialog = () => {
       message: "Кек. Ты то меня никогда не предашь 😌",
       time: 111,
       sender: otherNick
+    },
+    {
+      message: "Ave Caesar! Morituri te salutant! ☝️",
+      time: 111,
+      sender: myNick
+    },
+    { message: "How are you", time: 111, sender: myNick },
+    {
+      message: "Кек. Ты то меня никогда не предашь 😌",
+      time: 111,
+      sender: otherNick
+    },
+    {
+      message: "Ave Caesar! Morituri te salutant! ☝️",
+      time: 111,
+      sender: myNick
+    },
+    { message: "How are you", time: 111, sender: myNick },
+    {
+      message: "Кек. Ты то меня никогда не предашь 😌",
+      time: 111,
+      sender: otherNick
     }
   ];
   return (
