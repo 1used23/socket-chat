@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/socket-chat/static/css/main.9d01059f.chunk.css",
-    "main.js": "/socket-chat/static/js/main.75d4a0c0.chunk.js",
-    "main.js.map": "/socket-chat/static/js/main.75d4a0c0.chunk.js.map",
+    "main.js": "/socket-chat/static/js/main.28bea300.chunk.js",
+    "main.js.map": "/socket-chat/static/js/main.28bea300.chunk.js.map",
     "runtime-main.js": "/socket-chat/static/js/runtime-main.40857fde.js",
     "runtime-main.js.map": "/socket-chat/static/js/runtime-main.40857fde.js.map",
     "static/css/2.b2df2ba3.chunk.css": "/socket-chat/static/css/2.b2df2ba3.chunk.css",
-    "static/js/2.af620d85.chunk.js": "/socket-chat/static/js/2.af620d85.chunk.js",
-    "static/js/2.af620d85.chunk.js.map": "/socket-chat/static/js/2.af620d85.chunk.js.map",
+    "static/js/2.f1d1be3b.chunk.js": "/socket-chat/static/js/2.f1d1be3b.chunk.js",
+    "static/js/2.f1d1be3b.chunk.js.map": "/socket-chat/static/js/2.f1d1be3b.chunk.js.map",
     "index.html": "/socket-chat/index.html",
-    "precache-manifest.1743984e254ac373d998b934ae2be70c.js": "/socket-chat/precache-manifest.1743984e254ac373d998b934ae2be70c.js",
+    "precache-manifest.5e04e63a9f12bc5ac88953922ae42463.js": "/socket-chat/precache-manifest.5e04e63a9f12bc5ac88953922ae42463.js",
     "service-worker.js": "/socket-chat/service-worker.js",
     "static/css/2.b2df2ba3.chunk.css.map": "/socket-chat/static/css/2.b2df2ba3.chunk.css.map",
     "static/css/main.9d01059f.chunk.css.map": "/socket-chat/static/css/main.9d01059f.chunk.css.map",
-    "static/js/2.af620d85.chunk.js.LICENSE.txt": "/socket-chat/static/js/2.af620d85.chunk.js.LICENSE.txt"
+    "static/js/2.f1d1be3b.chunk.js.LICENSE.txt": "/socket-chat/static/js/2.f1d1be3b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.40857fde.js",
     "static/css/2.b2df2ba3.chunk.css",
-    "static/js/2.af620d85.chunk.js",
+    "static/js/2.f1d1be3b.chunk.js",
     "static/css/main.9d01059f.chunk.css",
-    "static/js/main.75d4a0c0.chunk.js"
+    "static/js/main.28bea300.chunk.js"
   ]
 }
