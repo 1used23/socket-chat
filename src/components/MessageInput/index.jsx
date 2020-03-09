@@ -6,7 +6,7 @@ import { Picker } from "emoji-mart";
 import "emoji-mart/css/emoji-mart.css";
 import "./MessageInput.scss";
 
-const MessageInput = ({ newMessage }) => {
+const MessageInput = ({ newMessage, activeDialog, myNick }) => {
   const [emojiPicker, setEmojiPicker] = useState(false);
   const [input, setInput] = useState("");
 
@@ -51,7 +51,7 @@ const MessageInput = ({ newMessage }) => {
               icon={<SendOutlined />}
               className="input-button"
               onClick={() => {
-                newMessage(input);
+                newMessage(activeDialog, myNick, input);
                 setInput("");
               }}
             />
