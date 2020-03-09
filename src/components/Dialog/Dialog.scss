@@ -8,6 +8,7 @@
     height: 90%;
     overflow-y: scroll;
     -ms-overflow-style: none;
+    scroll-behavior: smooth;
   }
   &__messages::-webkit-scrollbar {
     width: 0;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Message, MessageInput } from "../../components";
 
 import "./Dialog.scss";
@@ -6,6 +6,13 @@ import "./Dialog.scss";
 const Dialog = () => {
   const myNick = "nagibator";
   const otherNick = "Васян";
+
+  const messagesRef = useRef(null);
+
+  useEffect(() => {
+    console.log(messagesRef.current);
+    messagesRef.current.scrollTop = messagesRef.current.scrollHeight;
+  });
 
   const messages = [
     {
@@ -66,7 +73,7 @@ const Dialog = () => {
       <div className="dialog__name">
         <div className="dialog__name-text">{otherNick}</div>
       </div>
-      <div className="dialog__messages">
+      <div className="dialog__messages" ref={messagesRef}>
         {messages &&
           messages.map(message => {
             return message.sender === myNick ? (
