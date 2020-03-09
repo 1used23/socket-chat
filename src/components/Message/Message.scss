@@ -7,7 +7,10 @@
   padding: 14px 15px 10px 15px;
   font-size: 14px;
   line-height: 20px;
-  margin-top: 20px;
+  margin-bottom: 20px;
+  &:nth-child(1) {
+    margin-top: 20px;
+  }
   &-to-me {
     padding: 0px 35px 0 35px;
     display: flex;
