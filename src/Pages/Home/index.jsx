@@ -4,14 +4,13 @@ import { Dialog, DialogsList } from "../../components";
 import "./Home.scss";
 
 import dialogsListJson from "./dialogs.json";
-console.log(dialogsListJson);
 
 const Home = () => {
   const [activeDialog, setActiveDialog] = useState();
   const [dialogsList, setDialogsList] = useState(dialogsListJson);
 
   const newMessage = (dialogIndex, from, message) => {
-    const newDialogsList = dialogsList;
+    const newDialogsList = dialogsList.slice();
     newDialogsList[dialogIndex].messages = [
       ...newDialogsList[dialogIndex].messages,
       { from: from, message: message }
@@ -19,8 +18,6 @@ const Home = () => {
 
     setDialogsList(newDialogsList);
   };
-
-  console.log(dialogsList);
 
   return (
     <div className="home">

@@ -6,6 +6,7 @@ import "./DialogsList.scss";
 
 const DialogsList = ({ dialogsList, chooseDialog }) => {
   const [searchInput, setSearchInput] = useState("");
+
   return (
     <div className="dialogs-list">
       <div className="dialogs-list__title">
@@ -23,13 +24,12 @@ const DialogsList = ({ dialogsList, chooseDialog }) => {
           prefix={<SearchOutlined />}
         />
       </div>
-      {console.log(dialogsList)
-      }
       {dialogsList && (
         <div className="dialogs-list__elements">
           {dialogsList.map((dialog, index) => {
             return (
               <div
+                key={index}
                 className="dialog-element"
                 data-id={index}
                 onClick={e => {

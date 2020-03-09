@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
 import { Message, MessageInput } from "../../components";
 
 import "./Dialog.scss";
@@ -27,11 +27,11 @@ const Dialog = ({ activeDialog, dialogsList, newMessage }) => {
           </div>
           <div className="dialog__messages" ref={messagesRef}>
             {dialogsList &&
-              dialogsList.messages.map(message => {
+              dialogsList.messages.map((message, index) => {
                 return message.from === myNick ? (
-                  <Message message={message} isMe />
+                  <Message key={index} message={message} isMe />
                 ) : (
-                  <Message message={message} />
+                  <Message key={index} message={message} />
                 );
               })}
           </div>
