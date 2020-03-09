@@ -1,8 +1,18 @@
 .dialogs-list {
   width: 25%;
+  height: 100%;
   min-width: 300px;
   max-width: 300px;
   border-right: 1px solid #f7f7f7;
+  overflow: hidden;
+  &__elements {
+    height: 100%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
   &__search {
     padding: 22px 22px 22px 22px !important;
     width: 284px;

@@ -24,6 +24,7 @@ const MessageInput = ({ newMessage }) => {
       )}
 
       <Input
+        multiple
         size="large"
         placeholder="Введите текст сообщения…"
         onChange={e => {
