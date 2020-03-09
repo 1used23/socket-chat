@@ -54,6 +54,10 @@
     color: #202020;
     mix-blend-mode: normal;
     opacity: 0.4;
+    max-width: 209px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   &__wrap {
     margin-left: 11px;

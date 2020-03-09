@@ -6,6 +6,7 @@ import "./DialogsList.scss";
 
 const DialogsList = ({ dialogsList, chooseDialog }) => {
   const [searchInput, setSearchInput] = useState("");
+  const [filteredDialogsList, setFilteredDialogsList] = useState(dialogsList);
 
   return (
     <div className="dialogs-list">
@@ -19,14 +20,23 @@ const DialogsList = ({ dialogsList, chooseDialog }) => {
           placeholder="Поиск среди контактов"
           onChange={e => {
             setSearchInput(e.target.value);
+            setFilteredDialogsList(
+              dialogsList.filter(dialog => {
+                return (
+                  dialog.sender
+                    .toLowerCase()
+                    .indexOf(e.target.value.toLowerCase()) >= 0
+                );
+              })
+            );
           }}
           value={searchInput}
           prefix={<SearchOutlined />}
         />
       </div>
-      {dialogsList && (
+      {filteredDialogsList && (
         <div className="dialogs-list__elements">
-          {dialogsList.map((dialog, index) => {
+          {filteredDialogsList.map((dialog, index) => {
             return (
               <div
                 key={index}

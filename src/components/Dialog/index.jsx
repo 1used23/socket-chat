@@ -43,7 +43,9 @@ const Dialog = ({ activeDialog, dialogsList, newMessage }) => {
           />
         </>
       ) : (
-        "Выберите диалог"
+        <div className="dialog__name">
+          <div className="dialog__name-text">Выберите диалог</div>
+        </div>
       )}
     </div>
   );
